@@ -13,7 +13,7 @@ import java.util.Map;
 @RequestMapping("/api/post")
 public class PostContoller {
 
-    private PostService postService;
+    private final PostService postService;
 
     public PostContoller(PostService postService) {
         this.postService = postService;
