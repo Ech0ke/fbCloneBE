@@ -15,12 +15,12 @@ public class PostEntity {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @Lob
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String post;
     private String name;
     private String email;
 
-    @Lob
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String image;
     private String profilePic;
     private String timeStamp;

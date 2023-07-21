@@ -23,7 +23,7 @@ public class PostContoller {
     public Post addPost(@RequestParam Map<String, String> requestParams) throws Exception {
         String strpost = requestParams.get("post");
         String email = requestParams.get("email");
-        String name = requestParams.get("name");
+        String name = requestParams.get("user");
         String file = requestParams.get("file");
         String profilePic = requestParams.get("profilePic");
 
